@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States</title>
+    <style>
+        table,td,tr{
+            border: 1px solid;
+        }
+        a{
+            color: white;
+        }
+
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+    <center>
+    <table class="wikitable sortable jquery-tablesorter">
+        <thead><tr>
+        <th style="background:#9cf;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Rank
+        </th>
+        <th style="background:#9cf;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">State (S) / Union Territory (UT)
+        </th>
+        <th style="background:#9cf;" class="data-sort-type:number headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Area (km<sup>2</sup>)
+        </th>
+        <th style="background:#9cf;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Region
+        </th>
+        <th style="background:#9cf;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">National share (%)
+        </th>
+        <th style="background:#9cf;" class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Note
+        </th></tr></thead><tbody>
+        
+        <tr>
+        <td>1 (S1)
+        </td>
+        <td><a href="/wiki/Rajasthan" title="Rajasthan">Rajasthan</a>
+        </td>
+        <td>342,239
+        </td>
+        <td><a href="/wiki/Western_India" title="Western India">Western</a>
+        </td>
+        <td>10.414
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>2 (S2)
+        </td>
+        <td><a href="/wiki/Madhya_Pradesh" title="Madhya Pradesh">Madhya Pradesh</a>
+        </td>
+        <td>308,252
+        </td>
+        <td><a href="/wiki/Central_India" title="Central India">Central</a>
+        </td>
+        <td>9.376
+        </td>
+        <td><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[note 1]</a></sup>
+        </td></tr>
+        <tr>
+        <td>3 (S3)
+        </td>
+        <td><a href="/wiki/Maharashtra" title="Maharashtra">Maharashtra</a>
+        </td>
+        <td>307,713
+        </td>
+        <td><a href="/wiki/Western_India" title="Western India">Western</a>
+        </td>
+        <td>9.359
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>4 (S4)
+        </td>
+        <td><a href="/wiki/Uttar_Pradesh" title="Uttar Pradesh">Uttar Pradesh</a>
+        </td>
+        <td>240,928
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>7.328
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>5 (S5)
+        </td>
+        <td><a href="/wiki/Gujarat" title="Gujarat">Gujarat</a>
+        </td>
+        <td>196,024
+        </td>
+        <td><a href="/wiki/Western_India" title="Western India">Western</a>
+        </td>
+        <td>5.962
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>6 (S6)
+        </td>
+        <td><a href="/wiki/Karnataka" title="Karnataka">Karnataka</a>
+        </td>
+        <td>191,791
+        </td>
+        <td><a href="/wiki/South_India" title="South India">Southern</a>
+        </td>
+        <td>5.833
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>7 (S7)
+        </td>
+        <td><a href="/wiki/Andhra_Pradesh" title="Andhra Pradesh">Andhra Pradesh</a>
+        </td>
+        <td>162,975
+        </td>
+        <td><a href="/wiki/South_India" title="South India">Southern</a>
+        </td>
+        <td>4.957
+        </td>
+        <td><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[4]</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[note 2]</a></sup>
+        </td></tr>
+        <tr>
+        <td>8 (S8)
+        </td>
+        <td><a href="/wiki/Odisha" title="Odisha">Odisha</a>
+        </td>
+        <td>155,707
+        </td>
+        <td><a href="/wiki/Eastern_India" class="mw-redirect" title="Eastern India">Eastern</a>
+        </td>
+        <td>4.736
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>9 (S9)
+        </td>
+        <td><a href="/wiki/Chhattisgarh" title="Chhattisgarh">Chhattisgarh</a>
+        </td>
+        <td>135,192
+        </td>
+        <td><a href="/wiki/Central_india" class="mw-redirect" title="Central india">Central</a>
+        </td>
+        <td>4.112
+        </td>
+        <td><sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[note 3]</a></sup>
+        </td></tr>
+        <tr>
+        <td>10 (S10)
+        </td>
+        <td><a href="/wiki/Tamil_Nadu" title="Tamil Nadu">Tamil Nadu</a>
+        </td>
+        <td>130,058
+        </td>
+        <td><a href="/wiki/South_India" title="South India">Southern</a>
+        </td>
+        <td>3.956
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>11 (S11)
+        </td>
+        <td><a href="/wiki/Telangana" title="Telangana">Telangana</a>
+        </td>
+        <td>112,077
+        </td>
+        <td><a href="/wiki/South_india" class="mw-redirect" title="South india">Southern</a>
+        </td>
+        <td>3.409
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>12 (S12)
+        </td>
+        <td><a href="/wiki/Bihar" title="Bihar">Bihar</a>
+        </td>
+        <td>94,163
+        </td>
+        <td><a href="/wiki/East_India" title="East India">Eastern</a>
+        </td>
+        <td>2.864
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>13 (S13)
+        </td>
+        <td><a href="/wiki/West_Bengal" title="West Bengal">West Bengal</a>
+        </td>
+        <td>88,752
+        </td>
+        <td><a href="/wiki/East_India" title="East India">Eastern</a>
+        </td>
+        <td>2.700
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>14 (S14)
+        </td>
+        <td><a href="/wiki/Arunachal_Pradesh" title="Arunachal Pradesh">Arunachal Pradesh</a>
+        </td>
+        <td>83,743
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>2.548
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>15 (S15)
+        </td>
+        <td><a href="/wiki/Jharkhand" title="Jharkhand">Jharkhand</a>
+        </td>
+        <td>79,716
+        </td>
+        <td><a href="/wiki/East_India" title="East India">Eastern</a>
+        </td>
+        <td>2.424
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>16 (S16)
+        </td>
+        <td><a href="/wiki/Assam" title="Assam">Assam</a>
+        </td>
+        <td>78,438
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>2.386
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>17 (UT1)
+        </td>
+        <td><a href="/wiki/Ladakh" title="Ladakh">Ladakh</a>
+        </td>
+        <td>59,146(166,698)
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>1.800(5.079)
+        </td>
+        <td><sup id="cite_ref-short100sqkm1_8-0" class="reference"><a href="#cite_note-short100sqkm1-8">[note 4]</a></sup>
+        </td></tr>
+        <tr>
+        <td>18 (S17)
+        </td>
+        <td><a href="/wiki/Himachal_pradesh" class="mw-redirect" title="Himachal pradesh">Himachal Pradesh</a>
+        </td>
+        <td>55,673
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>1.693
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>19 (S18)
+        </td>
+        <td><a href="/wiki/Uttarakhand" title="Uttarakhand">Uttarakhand</a>
+        </td>
+        <td>53,483
+        </td>
+        <td><a href="/wiki/Northwestern_India" class="mw-redirect" title="Northwestern India">Northern</a>
+        </td>
+        <td>1.626
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>20 (S19)
+        </td>
+        <td><a href="/wiki/Punjab,_India" title="Punjab, India">Punjab</a>
+        </td>
+        <td>50,362
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>1.531
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>21(S20)
+        </td>
+        <td><a href="/wiki/Haryana" title="Haryana">Haryana</a>
+        </td>
+        <td>44,212
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>1.344
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>22 (UT2)
+        </td>
+        <td><a href="/wiki/Jammu_and_Kashmir_(union_territory)" title="Jammu and Kashmir (union territory)">Jammu and Kashmir</a>
+        </td>
+        <td>42,241(55,538)
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>1.285(1.689)
+        </td>
+        <td><sup id="cite_ref-short100sqkm_9-0" class="reference"><a href="#cite_note-short100sqkm-9">[note 5]</a></sup>
+        </td></tr>
+        <tr>
+        <td>23 (S21)
+        </td>
+        <td><a href="/wiki/Kerala" title="Kerala">Kerala</a>
+        </td>
+        <td>38,863
+        </td>
+        <td><a href="/wiki/South_India" title="South India">Southern</a>
+        </td>
+        <td>1.182
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>24 (S22)
+        </td>
+        <td><a href="/wiki/Meghalaya" title="Meghalaya">Meghalaya</a>
+        </td>
+        <td>22,429
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>0.682
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>25 (S23)
+        </td>
+        <td><a href="/wiki/Manipur" title="Manipur">Manipur</a>
+        </td>
+        <td>22,327
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>0.680
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>26 (S24)
+        </td>
+        <td><a href="/wiki/Mizoram" title="Mizoram">Mizoram</a>
+        </td>
+        <td>21,081
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>0.642
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>27 (S25)
+        </td>
+        <td><a href="/wiki/Nagaland" title="Nagaland">Nagaland</a>
+        </td>
+        <td>16,579
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>0.505
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>28 (S26)
+        </td>
+        <td><a href="/wiki/Tripura" title="Tripura">Tripura</a>
+        </td>
+        <td>10,491
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>0.320
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>29 (UT3)
+        </td>
+        <td><a href="/wiki/Andaman_and_Nicobar_Islands" title="Andaman and Nicobar Islands">Andaman and Nicobar Islands</a>
+        </td>
+        <td>8,249
+        </td>
+        <td><a href="/wiki/Bay_of_Bengal" title="Bay of Bengal">Bay of Bengal</a>
+        </td>
+        <td>0.251
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>30 (S27)
+        </td>
+        <td><a href="/wiki/Sikkim" title="Sikkim">Sikkim</a>
+        </td>
+        <td>7,096
+        </td>
+        <td><a href="/wiki/Northeast_India" title="Northeast India">Northeastern</a>
+        </td>
+        <td>0.217
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>31 (S28)
+        </td>
+        <td><a href="/wiki/Goa" title="Goa">Goa</a>
+        </td>
+        <td>3,702
+        </td>
+        <td><a href="/wiki/Western_India" title="Western India">Western</a>
+        </td>
+        <td>0.112
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>32 (UT4)
+        </td>
+        <td><a href="/wiki/Delhi" title="Delhi">Delhi</a>
+        </td>
+        <td>1,484
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>0.045
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>33 (UT5)
+        </td>
+        <td><a href="/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu" title="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</a>
+        </td>
+        <td>603
+        </td>
+        <td><a href="/wiki/Western_India" title="Western India">Western</a>
+        </td>
+        <td>0.018
+        </td>
+        <td><sup id="cite_ref-auto2_10-0" class="reference"><a href="#cite_note-auto2-10">[5]</a></sup>
+        </td></tr>
+        <tr>
+        <td>34 (UT6)
+        </td>
+        <td><a href="/wiki/Puducherry_(union_territory)" title="Puducherry (union territory)">Puducherry</a>
+        </td>
+        <td>479
+        </td>
+        <td><a href="/wiki/South_India" title="South India">Southern</a>
+        </td>
+        <td>0.015
+        </td>
+        <td><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[note 6]</a></sup>
+        </td></tr>
+        <tr>
+        <td>35 (UT7)
+        </td>
+        <td><a href="/wiki/Chandigarh" title="Chandigarh">Chandigarh</a>
+        </td>
+        <td>114
+        </td>
+        <td><a href="/wiki/North_India" title="North India">Northern</a>
+        </td>
+        <td>0.003
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td>36 (UT8)
+        </td>
+        <td><a href="/wiki/Lakshadweep" title="Lakshadweep">Lakshadweep</a>
+        </td>
+        <td>32
+        </td>
+        <td><a href="/wiki/Arabian_Sea" title="Arabian Sea">Arabian Sea</a>
+        </td>
+        <td>0.001
+        </td>
+        <td>
+        </td></tr>
+        <tr>
+        <td style="background:#99cccf;"><b>Total</b>
+        </td>
+        <td style="background:#99cccf; text-align:left;"><b>India</b>
+        </td>
+        <td style="background:#99cccf; text-align:left;"><b>3,287,263 (3,166,414)</b><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[a]</a></sup>
+        </td>
+        <td style="background:#99cccf;"><b>South</b> <b>Asia</b>
+        </td>
+        <td style="background:#99cccf; text-align:left;"><b>100 (96.323)</b>
+        </td>
+        <td style="background:#99cccf;">
+        </td></tr></tbody><tfoot></tfoot></table>
+    </center>
+        <h3>Source:Wikipedia</h3>
+</body>
+</html>
